@@ -1,4 +1,4 @@
-(function ($) {
+$(document).ready(function() {
     "use strict";
 
     // Spinner
@@ -62,9 +62,9 @@
         var typed_strings = $('.typed-text').text();
         var typed = new Typed('.typed-text-output', {
             strings: typed_strings.split(', '),
-            typeSpeed: 100,
-            backSpeed: 20,
-            smartBackspace: false,
+            typeSpeed: 70,
+            backSpeed: 10,
+            smartBackspace: true,
             loop: true
         });
     }
@@ -95,5 +95,5 @@
   
 
     
-})(jQuery);
+});
 
