@@ -1,89 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link href="img/bg-icon.png" rel="icon">
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/new.css" rel="stylesheet">
+    <title>Glenn Christian Terrible - Web Developer</title>
+    <link href="css/test.css" rel="stylesheet">
 </head>
-
 <body>
-    <div class="container main">
-        <nav class="item nav navbar navbar-light navbar-expand bg-transparent rounded custom-navbar border border-none">
-            <a class="navbar-brand" href="#">My Portfolio</a>
-            <ul class="navbar-nav d-flex flex-wrap w-100 justify-content-center">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
-            </ul>
-        </nav>
-
-        <div class="item sidebar bg-transparent border border-none rounded" name="Sidebar">
-            Sidebar
-            <nav class="navbar navbar-light bg-transparent rounded custom-navbar">
-                <ul class="navbar-nav d-flex flex-wrap w-100 justify-content-center ">
-                    <li class="nav-item active">
-                        <a href="#">Link 1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#">Link 2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#">Link 3</a>
-                    </li>
-                </ul>
-            </nav>
+    <!-- Animated background elements -->
+    <div class="bg-element"></div>
+    <div class="bg-element"></div>
+    <div class="bg-element"></div>
+    <div class="bg-element"></div>
+    <div class="bg-element"></div>
+    <div class="bg-element"></div>
+    
+    <!-- Navigation -->
+    <div class="nav-container">
+        <div class="nav-dots">
+            <div class="nav-dot active" data-label="Home" onclick="scrollToSection('hero')"></div>
+            <div class="nav-dot" data-label="About" onclick="scrollToSection('overview')"></div>
+            <div class="nav-dot" data-label="Projects" onclick="scrollToSection('projects')"></div>
+            <div class="nav-dot" data-label="Contacts" onclick="scrollToSection('contacts')"></div>
         </div>
-        <div class="item bg-transparent border border-none rounded" name="Header">
-            <h2 class="typed-text-output h2 d-inline"></h2>
-            <div class="typed-text d-none">Full Stack Developer, Apps Developer , Computer System Services</div>
-        </div>
-        <div class="item bg-transparent border border-none rounded" name="info">Information</div>
-        <div class="item main bg-transparent border border-none rounded h-100"><img class="image-overlay img-fluid" src="img/profile.png" alt="Large Picture"></div>
-        <div class="item bg-transparent border border-none rounded" name="foot">Footer</div>
     </div>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <script src="js/main.js"></script>
+    <!-- Section 1: Hero -->
+    <section id="hero" class="section hero-section">
+        <div class="profile-photo"></div>
+        <div class="hero-name">Hello I'm </div>
+        <div class="hero-title">Glenn</div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
 
+    <!-- Section 2: Overview -->
+    <section id="overview" class="section overview-section">
+        <div class="overview-content">
+            <div class="overview-text-section">
+                <h2 class="slide-in-left">About Me</h2>
+                <div class="overview-description slide-in-left">
+                    Hello! I'm Glenn Christian Terrible, a passionate and hardworking Computer Scientist with a focus on software development, full-stack web technologies, and data analysis. My journey started out of curiosity and has grown into a strong dedication to solving problems with technology.
+                </div>
+            </div>
+            
+            <div class="details-section slide-in-right">
+                <div class="section-block">
+                    <h3>Personal Details</h3>
+                    <ul class="contact-info">
+                        <li>gcterrible@gmail.com</li>
+                        <li>February 14, 2001</li>
+                    </ul>
+                </div>
+
+                <div class="section-block">
+                    <h3>Key Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">Web Design</div>
+                        <div class="skill-item">Full-Stack Dev</div>
+                        <div class="skill-item">Mobile Apps</div>
+                        <div class="skill-item">Data Analysis</div>
+                        <div class="skill-item">System Service</div>
+                        <div class="skill-item">Graphics Design</div>
+                    </div>
+                </div>
+
+                <div class="section-block">
+                    <h3>Programming Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">PHP</div>
+                        <div class="skill-item">MySQL</div>
+                        <div class="skill-item">Flutter</div>
+                        <div class="skill-item">C++</div>
+                        <div class="skill-item">React</div>
+                        <div class="skill-item">Three.js</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Projects -->
+    <section id="projects" class="section project-section">
+        <div class="projects-header fade-in">
+            <div class="projects-title">Projects</div>
+            <div class="projects-subtitle">
+                A showcase of my work spanning web development, mobile applications, and creative projects.
+            </div>
+        </div>
+
+        <div class="projects-grid fade-in">
+            <div class="project-card">
+                <h4>E-Commerce Platform</h4>
+                <p>Full-stack web application built with React and Node.js, featuring user authentication, payment integration, and responsive design.</p>
+            </div>
+            <div class="project-card">
+                <h4>Mobile Fitness App</h4>
+                <p>Flutter-based mobile application for fitness tracking with real-time data visualization and social features.</p>
+            </div>
+            <div class="project-card">
+                <h4>Data Analytics Dashboard</h4>
+                <p>Python-powered analytics platform with interactive visualizations using D3.js and machine learning insights.</p>
+            </div>
+            <div class="project-card">
+                <h4>3D Web Experience</h4>
+                <p>Immersive Three.js application featuring interactive 3D environments and WebGL animations for enhanced user engagement.</p>
+            </div>
+            <div class="project-card">
+                <h4>AI Chatbot Interface</h4>
+                <p>Intelligent conversational interface using natural language processing and modern web technologies for seamless user interaction.</p>
+            </div>
+            <div class="project-card">
+                <h4>Portfolio Website</h4>
+                <p>Responsive portfolio website showcasing modern design principles, smooth animations, and optimal user experience across all devices.</p>
+            </div>
+        </div>
+    </section>
+
+     <script src="js/test.js"></script>
 </body>
-
 </html>
