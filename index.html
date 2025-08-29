@@ -30,6 +30,50 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+/* Additional Designs for Portfolio Section */
+.portfolio-container {
+    scrollbar-width: thin;
+    scrollbar-color: #0d6efd #f1f1f1;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    background: linear-gradient(135deg, #f8fafc 60%, #e3e8ee 100%);
+
+    max-height: 900px;      /* Show more content */
+    min-height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 2;             /* Adjust z-index for stacking context */
+    position: relative;     /* Needed for z-index to work */
+}
+.portfolio-container::-webkit-scrollbar {
+    width: 12px;
+    z-index: 3;             /* Ensure scrollbar is above background */
+}
+.portfolio-img {
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    background: #fff;
+    z-index: 2;
+    position: relative;
+}
+.portfolio-img:hover {
+    transform: scale(1.08); /* Less aggressive zoom for better layout */
+    box-shadow: 0 6px 24px rgba(13,110,253,0.12);
+    z-index: 3;             /* Bring hovered image above others */
+}
+.portfolio-btn .btn {
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.portfolio-btn .btn:hover {
+    background: #0d6efd;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(13,110,253,0.15);
+}
+.portfolio-item {
+    margin-bottom: 16px;
+}
+</style>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
