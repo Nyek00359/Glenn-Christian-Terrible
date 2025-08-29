@@ -164,7 +164,7 @@
 
     <!-- Portfolio Start -->
     <div class="container-xxl py-6 pt-5" id="project">
-        <div class="container ">
+        <div class="container">
             <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
                 <div class="col-lg-6">
                     <h1 class="display-5 mb-0">My Projects</h1>
@@ -178,7 +178,10 @@
                     </ul>
                 </div>
             </div>
-            <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
+            <!-- Make portfolio items scrollable -->
+            <div class="row g-4 portfolio-container wow fadeInUp"
+                 data-wow-delay="0.1s"
+                 style="max-height: 600px; overflow-y: auto;">
                 <div class="col-lg-4 col-md-6 portfolio-item first">
                     <div class="portfolio-img rounded overflow-hidden">
                         <img class="img-fluid" src="img/Ordering System.jpg" alt="">
@@ -193,6 +196,13 @@
                         <img class="img-fluid" src="img/Website_mercado.jpg" alt="">
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/Website_mercado.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <!-- Lightbox for Additional Pictures (Carousel) -->
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                               href="img/Website_mercado_2.jpg"
+                               data-lightbox="portfolio"
+                               data-title="Mobile App Screenshot 1">
+                                <i class="fa fa-image"></i>
+                            </a>
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
                         </div>
                     </div>
@@ -208,18 +218,65 @@
                             </iframe>
                         </div>
                         <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="https://www.youtube.com/watch?v=AsyAwsDdVUg" target="_blank"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
+                            <!-- Lightbox for Video -->
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                               href="https://www.youtube.com/embed/AsyAwsDdVUg?autoplay=1"
+                               data-lightbox="portfolio"
+                               data-title="Mobile App Demo">
+                                <i class="fa fa-play"></i>
+                            </a>
+                            <!-- Lightbox for Additional Pictures (Carousel) -->
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                               href="img/mobile-app-1.jpg"
+                               data-lightbox="portfolio"
+                               data-title="Mobile App Screenshot 1">
+                                <i class="fa fa-image"></i>
+                            </a>
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                               href="img/mobile-app-2.jpg"
+                               data-lightbox="portfolio"
+                               data-title="Mobile App Screenshot 2">
+                                <i class="fa fa-image"></i>
+                            </a>
+                            <!-- Direct link to YouTube -->
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                               href="https://www.youtube.com/watch?v=AsyAwsDdVUg"
+                               target="_blank">
+                                <i class="fa fa-eye"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <!-- Video Project Item End -->
                 <div class="col-lg-4 col-md-6 portfolio-item second">
                     <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/bag_mockup (1).jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/bag_mockup (1).jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/bag_mockup (1).png" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/bag_mockup (1).png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/tshirt_mockup.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/tshirt_mockup.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
                         <img class="img-fluid" src="img/project-2.jpg" alt="">
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
                         </div>
                     </div>
                 </div>
@@ -228,7 +285,6 @@
                         <img class="img-fluid" src="img/project-3.jpg" alt="">
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
                         </div>
                     </div>
                 </div>
@@ -237,7 +293,6 @@
                         <img class="img-fluid" src="img/project-5.jpg" alt="">
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
                         </div>
                     </div>
                 </div>
@@ -246,7 +301,6 @@
                         <img class="img-fluid" src="img/project-6.jpg" alt="">
                         <div class="portfolio-btn">
                             <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href="img/project-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1" href=""><i class="fa fa-link"></i></a>
                         </div>
                     </div>
                 </div>
